@@ -1,0 +1,47 @@
+<!-- What's In the Picture (proj name: in-picture)
+In this game, the player sees an image and some options that
+describe the image, the user picks the right option and moves to
+the next question if correct.
+Pick the sentence that describes the picture:
+1. gQuests = [
+{id: 1, opts:[], correctOptIndex:1 }
+{id: 2, opts:[], correctOptIndex:0 }
+{…}…
+]
+gCurrQuestIdx = 0
+2. Note: It is convenient to have the images named by the quest
+id (e.g. : 1.jpg)
+3. If the player is correct, move on to next quest
+4. After last question – show a 'Victorious' msg to the user and a
+restart button
+5. Some more functions:
+a. initGame()
+
+b. createQuests() – return an hard-coded (ready made)
+array for now with at least 3 questions
+c. renderQuest()
+d. checkAnswer(optIdx) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in-picture</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body onload="initGame()">
+   <h1>  Pick the sentence that describes the picture </h1>
+ <div class="image"></div>  
+ <div class="restart">  <button  onclick="onPlayGame()">restart</button>  </div>
+<div class="opts"> 
+   <button onclick=" checkAnswer(this)"></button>
+</div>
+
+<div class="modal">  
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

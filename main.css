@@ -1,0 +1,51 @@
+body {
+
+    background-color: rgb(238, 99, 99);
+    text-align: center;
+
+
+}
+
+button {
+    padding: 10px;
+    bottom: 100px;
+    /* position: absolute; */
+    width: 600px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin: auto; */
+    /* display: block; */
+
+}
+
+.modal {
+
+    height: 100px;
+    width: 400px;
+    background-color: darkorchid;
+    border: solid 10px white;
+    /* margin-left: auto; */
+    /* margin-top: 200px; */
+    display: none;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.restart {
+    display: none;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    left: 320px
+        /* z-index: 1; */
+}
+
+.restart button{
+margin: auto;
+height: 200px;
+
+}
